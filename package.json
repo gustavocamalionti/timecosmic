@@ -1,0 +1,17 @@
+{
+  "name": "clone-tabnews",
+  "version": "1.0.0",
+  "description": "O projeto foi criado utilizando os mais recentes padrões de mercado, aplicando as melhores práticas de desenvolvimento de software e integração contínua. Com uma arquitetura escalável e moderna, este sistema é construído para fornecer uma solução robusta e eficiente",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
