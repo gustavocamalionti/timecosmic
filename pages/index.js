@@ -1,9 +1,6 @@
 
 function Home() {
-    return <h1>Você só está aqui pois é parte fundamental da minha vida, obrigado! <br></br><br></br><br></br>
-       
-        Alias, buchicho, eu te amo! se você me ama da uma risadinha!
-    </h1>
-}
-
+    return <h1>Buchicho, eu te amo ! se você me ama da uma risadinha! 😎 </h1>
+    }
+    
 export default Home;
