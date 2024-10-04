@@ -4,7 +4,10 @@
     "description": "O projeto foi criado utilizando os mais recentes padrões de mercado, aplicando as melhores práticas de desenvolvimento de software e integração contínua. Com uma arquitetura escalável e moderna, este sistema é construído para fornecer uma solução robusta e eficiente",
     "main": "index.js",
     "scripts": {
-        "dev": "next dev",
+        "dev": "npm run services:up && next dev",
+        "services:up": "docker compose -f infra/compose.yaml up -d",
+        "services:stop": "docker compose -f infra/compose.yaml stop",
+        "services:down": "docker compose -f infra/compose.yaml down",
         "lint:check": "prettier --check .",
         "lint:fix": "prettier --write .",
         "test": "jest",
