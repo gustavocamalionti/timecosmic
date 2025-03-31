@@ -4,18 +4,18 @@ Apresentamos o **TimeCosmic**, o futuro ponto de encontro para debates e descobe
 
 ## Tecnologias em Destaque:
 
--   **Git e GitHub**: Integração contínua no fluxo de trabalho.
--   **React**: Interface intuitiva e responsiva.
--   **Next.Js**: Framework React com renderização híbrida e performance otimizada.
--   **JavaScript**: Linguagem essencial para interação e dinâmica da web.
--   **PostgreSQL**: Gestão robusta e segura de dados.
--   **Jest**: Framework de testes para garantir a qualidade do código.
--   **Prettier**: Ferramenta de formatação de código para consistência.
--   **Docker**: Contêineres para garantir consistência entre ambientes.
--   **Terraform**: Provisionamento automatizado de infraestrutura em nuvem.
--   **CI/CD e Testes Automatizados**: Garantindo qualidade e eficiência no desenvolvimento.
--   **TDD**: Abordagem que eleva a confiabilidade do código.
--   **Infraestrutura como Código**: Para um gerenciamento eficiente, escalonável e modificável.
+- **Git e GitHub**: Integração contínua no fluxo de trabalho.
+- **React**: Interface intuitiva e responsiva.
+- **Next.Js**: Framework React com renderização híbrida e performance otimizada.
+- **JavaScript**: Linguagem essencial para interação e dinâmica da web.
+- **PostgreSQL**: Gestão robusta e segura de dados.
+- **Jest**: Framework de testes para garantir a qualidade do código.
+- **Prettier**: Ferramenta de formatação de código para consistência.
+- **Docker**: Contêineres para garantir consistência entre ambientes.
+- **Terraform**: Provisionamento automatizado de infraestrutura em nuvem.
+- **CI/CD e Testes Automatizados**: Garantindo qualidade e eficiência no desenvolvimento.
+- **TDD**: Abordagem que eleva a confiabilidade do código.
+- **Infraestrutura como Código**: Para um gerenciamento eficiente, escalonável e modificável.
 
 ## Gerenciamento Eficiente:
 
