@@ -13,8 +13,7 @@ export default function StatusPage() {
             <h1>Status</h1>
             <UpdatedAt />
 
-            <h2>Serviços: Banco de Dados</h2>
-            <InfoDatabase />
+            <DatabaseStatus />
         </>
     );
 }
@@ -32,26 +31,33 @@ function UpdatedAt() {
     return <div>Última atualização: {updatedAtText}</div>;
 }
 
-function InfoDatabase() {
+function DatabaseStatus() {
     const { isLoading, data } = useSWR("/api/v1/status", fetchAPI, {
         refreshInterval: 2000,
     });
 
-    let versionText = "-";
-    let maxConnectionsText = "-";
-    let openedConnectionsText = "-";
+    let databaseStatusInformation = "Carregando ...";
 
     if (!isLoading && data) {
-        versionText = data.dependencies.database.version;
-        maxConnectionsText = data.dependencies.database.max_connections;
-        openedConnectionsText = data.dependencies.database.opened_connections;
+        databaseStatusInformation = (
+            <>
+                <div>Versão: {data.dependencies.database.version}</div>
+                <div>
+                    Conexões abertas:{" "}
+                    {data.dependencies.database.opened_connections}
+                </div>
+                <div>
+                    Conexões máximas:{" "}
+                    {data.dependencies.database.max_connections}
+                </div>
+            </>
+        );
     }
 
     return (
-        <ul>
-            <li>Versão: Postgres {versionText}</li>
-            <li>Qtd. de Conexões - Máxima: {maxConnectionsText}</li>
-            <li>Qtd. de Conexões - Abertas: {openedConnectionsText}</li>
-        </ul>
+        <>
+            <h2>Database</h2>
+            <div>{databaseStatusInformation}</div>
+        </>
     );
 }
