@@ -20,8 +20,8 @@ const defaultMigrationOptions = {
 };
 
 async function getHandler(request, response) {
+    let dbClient;
     try {
-        let dbClient;
         dbClient = await database.getNewClient();
 
         const pendingMigrations = await migrationRunner({
@@ -36,9 +36,8 @@ async function getHandler(request, response) {
 }
 
 async function postHandler(request, response) {
+    let dbClient;
     try {
-        let dbClient;
-
         dbClient = await database.getNewClient();
 
         const migratedMigrations = await migrationRunner({
